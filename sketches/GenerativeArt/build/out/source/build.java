@@ -12,18 +12,19 @@ import java.io.InputStream;
 import java.io.OutputStream; 
 import java.io.IOException; 
 
-public class GenerativeArt extends PApplet {
+public class build extends PApplet {
 
 public void setup() {
-  fill(224, 250, 50);
+  fill(0xffff3300);
   rect(20, 20, 50, 50);
 }
 
 public void draw() {
-
+  fill(0xffff3300);
+  rect(20, 20, 50, 50);
 }
   static public void main(String[] passedArgs) {
-    String[] appletArgs = new String[] { "GenerativeArt" };
+    String[] appletArgs = new String[] { "build" };
     if (passedArgs != null) {
       PApplet.main(concat(appletArgs, passedArgs));
     } else {
